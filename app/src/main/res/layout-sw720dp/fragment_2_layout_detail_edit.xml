@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/score_condi_level2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_overlay">
+
+                <TextView
+                    android:id="@+id/textTitleListPromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="กำนดวันที่เริ่มใช้งาน"
+                    android:textColor="@color/color_primary_text"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/edt_date_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/textTitleListPromo"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_selector"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="yyyy-mm-dd"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/img_date_start"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="55dp"
+
+                    app:srcCompat="@drawable/ic_date_range_black_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_cust1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_overlay">
+
+                <TextView
+                    android:id="@+id/textTitleListPromo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="กำนดวันที่สิ้นสุดใช้งาน"
+                    android:textColor="@color/color_primary_text"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/edt_date_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/textTitleListPromo1"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_selector"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="yyyy-mm-dd"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/img_date_end"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="55dp"
+
+                    app:srcCompat="@drawable/ic_date_range_black_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_overlay">
+
+                <TextView
+                    android:id="@+id/textTitleListPromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="กำหนดเวลา"
+                    android:textColor="@color/color_primary_text"
+                    android:textSize="30sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTitleListPromo"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingTop="4dp"
+                    android:theme="@style/MyRadio">
+
+                    <RadioButton
+                        android:id="@+id/rdbTime1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="กำหนด"
+                        android:textColor="@color/color_second_text"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/rdbTime2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ไม่กำหนด"
+                        android:textColor="@color/color_second_text"
+                        android:textSize="24sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_time_start"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/black_overlay">
+
+                <TextView
+                    android:id="@+id/textTitleListPromo4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="กำหนดเวลาเริ่มใช้งาน"
+                    android:textColor="@color/color_primary_text"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/edt_time_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/textTitleListPromo4"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_selector"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="hh:mm"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/img_time_start"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="55dp"
+                    app:srcCompat="@drawable/ic_av_timer_black_24dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_time_end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/black_overlay">
+
+                <TextView
+                    android:id="@+id/textTitleListPromo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="กำหนดเวลาสิ้นสุดใช้งาน"
+                    android:textColor="@color/color_primary_text"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/edt_time_end"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/textTitleListPromo5"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edit_text_selector"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="hh:mm"
+                    android:inputType="textPersonName"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/img_time_end"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="55dp"
+                    app:srcCompat="@drawable/ic_av_timer_black_24dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_back_level3"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_add_promo"
+            android:drawableLeft="@drawable/ic_arrow_back_black_24dp2"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="ย้อนกลับ"
+            android:textColor="@color/black_overlay"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/btn_save_level3"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_next"
+            android:drawableRight="@drawable/ic_done_black_24dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="บันทึก"
+            android:textColor="@color/black_overlay"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Promotions</string>
+
+    <string name="hello_blank_fragment">This is the main fragment</string>
+
+    <array name="menuOptions">
+        <!--<item>Home</item>
+        <item>Personal</item>
+        <item>High scores</item>
+        <item>Settings</item>
+        <item>About</item>-->
+        <item>หน้าหลัก</item>
+        <item>เพิ่มโปรโมชั่นใหม่</item>
+        <item>จัดการโปรโมชั่น</item>
+        <item>โปรโมชั่นที่เคยสร้างแล้ว</item>
+        <item>รายงานการใช้โปรโมชั่น</item>
+    </array>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+
+    <integer name="edit_fade_duration">800</integer>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+      <!-- นำสีที่ได้สร้างไว้ใน Resource มาใช้เป็นพื้นหลัง -->
+      <item android:drawable="@color/splashScreenBg"/>
+      <item>		<!-- นำภาพที่ได้เก็บไว้ใน drawable มาแสดง ณ ตำแหน่งกึ่งกลางหน้าจอ -->
+            <bitmap
+                  android:gravity="center"
+                  android:src="@drawable/splash_logo"/>
+      </item>
+</layer-list>

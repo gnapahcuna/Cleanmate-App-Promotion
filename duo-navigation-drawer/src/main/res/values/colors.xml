@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#20214d</color>
+    <color name="colorPrimaryDark">#20214d</color>
+    <!--<color name="colorAccent">#eaedf6</color>-->
+    <color name="colorAccent">#33c5c5</color>
+    <color name="color_desc_text">#eaedf6</color>
+    <color name="splashScreenBg">#fff</color>
+    <color name="black_overlay">#fff</color>
+    <color name="card_promo_list">#667787</color>
+    <color name="text_desc_line">#b1b7b5</color>
+
+    <color name="item_state_pressed">#ffa</color>
+    <color name="item_state_normal">#fff</color>
+
+    <color name="color_button">#33c5c5</color>
+    <color name="color_button1">#638497</color>
+    <color name="color_primary_text">#20214d</color>
+    <color name="color_second_text">#638497</color>
+    <color name="color_selector">#e34d66</color>
+</resources>

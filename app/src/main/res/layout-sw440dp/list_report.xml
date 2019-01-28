@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0.15dp"
+    android:layout_marginTop="0.15dp"
+    android:background="@drawable/normal_item_state">
+
+    <TextView
+        android:id="@+id/textNameCust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:text="บริการ"
+        android:textColor="@color/color_primary_text"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNameCust"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="4dp"
+        android:text="ตัวอย่าง : xxx"
+        android:textColor="@color/color_second_text"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textOrder"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="24dp"
+        android:text="ตัวอย่าง : xxx"
+        android:textColor="@color/color_second_text"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+</RelativeLayout>

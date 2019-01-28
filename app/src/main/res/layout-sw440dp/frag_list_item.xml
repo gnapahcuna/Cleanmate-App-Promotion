@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0.35dp"
+    android:layout_marginTop="0.35dp"
+    android:background="@drawable/normal_item_state">
+
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Active"
+                android:textColor="@color/color_selector"
+                android:textColorLink="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.511"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.219" />
+
+            <ImageView
+                android:id="@+id/imageViewStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textStatus"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/icon_active"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textStatus" />
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textNamePromo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:text="Promotion Name"
+        android:textColor="@color/color_primary_text"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textNumpromo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNamePromo"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        android:text="Promotion Name"
+        android:textColor="@color/color_second_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textTotalPromo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNumpromo"
+        android:layout_marginLeft="36dp"
+        android:text="Promotion Name"
+        android:textColor="@color/color_second_text"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textDateStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTotalPromo"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="12dp"
+        android:text="เริ่มใช้ : 11/01/2019"
+        android:textColor="@color/color_second_text"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textTimeStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDateStart"
+        android:layout_marginLeft="18dp"
+        android:text="เริ่มใช้ : 11/01/2019"
+        android:textColor="@color/color_second_text"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textDateEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTotalPromo"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/textDateStart"
+        android:text="สิ้นสุด : 11/02/2019"
+        android:textColor="@color/color_second_text"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textTimeEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textDateEnd"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/textTimeStart"
+        android:text="สิ้นสุด : 11/02/2019"
+        android:textColor="@color/color_second_text"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textCreateBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTimeStart"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="18dp"
+        android:text="สร้างโดย : ป้าง จร้า"
+        android:textColor="@color/color_second_text"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:textStyle="italic" />
+</RelativeLayout>

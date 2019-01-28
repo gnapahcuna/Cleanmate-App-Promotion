@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_overlay"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_page"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="(3/4)"
+        android:textColor="@color/color_primary_text"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <ScrollView
+        android:id="@+id/score_condi_level2"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_overlay">
+
+                <TextView
+                    android:id="@+id/textTitleListPromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="กำหนดลูกค้า"
+                    android:textColor="@color/color_primary_text"
+                    android:textSize="24sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTitleListPromo"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingTop="4dp"
+                    android:theme="@style/MyRadio">
+
+                    <RadioButton
+                        android:id="@+id/rdbCust1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ลูกค้าทั้งหมด"
+                        android:textColor="@color/color_second_text"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/rdbCust2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="เฉพาะลูกค้า"
+                        android:textColor="@color/color_second_text"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_cust1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_overlay">
+
+                <TextView
+                    android:id="@+id/textTitleListPromo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="เลือกลูกค้า"
+                    android:textColor="@color/color_primary_text"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/textTitleListPromo1"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_select_cust"
+                        android:layout_width="200sp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_next"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:text="เลือกลูกค้า"
+                        android:textColor="@color/black_overlay"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_overlay">
+
+                <TextView
+                    android:id="@+id/textTitleListPromo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="กำหนดสาขา"
+                    android:textColor="@color/color_primary_text"
+                    android:textSize="24sp" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTitleListPromo"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingTop="4dp"
+                    android:theme="@style/MyRadio">
+
+                    <RadioButton
+                        android:id="@+id/rdbBranch1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ทุกสาขา"
+                        android:textColor="@color/color_second_text"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/rdbBranch2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="เฉพาะสาขา"
+                        android:textColor="@color/color_second_text"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_branch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@color/black_overlay">
+
+                <TextView
+                    android:id="@+id/textTitleListPromo5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="10dp"
+                    android:text="เลือกสาขา"
+                    android:textColor="@color/color_primary_text"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/textTitleListPromo5"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_select_branch"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_next"
+                        android:drawableLeft="@drawable/ic_store_black_24dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="10dp"
+                        android:text="เลือกสาขา"
+                        android:textColor="@color/black_overlay"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="30dp">
+
+        <Button
+            android:id="@+id/btn_back_level2"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_add_promo"
+            android:gravity="center"
+            android:text="ย้อนกลับ"
+            android:textColor="@color/black_overlay"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_next_condition_level2"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_next"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+            android:gravity="center"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="ถัดไป"
+            android:textColor="@color/black_overlay"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

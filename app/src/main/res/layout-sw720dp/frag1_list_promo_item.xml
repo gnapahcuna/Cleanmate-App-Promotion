@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="120dp"
+    android:layout_marginBottom="0.35dp"
+    android:layout_marginTop="0.35dp"
+    android:background="@drawable/normal_item_state"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/img_add_promo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/ic_add_box_black_24dp" />
+
+    <TextView
+        android:id="@+id/textNamePromo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="16dp"
+        android:text="บริการ"
+        android:textColor="@color/color_primary_text"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textExam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textNamePromo"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="50dp"
+        android:text="ตัวอย่าง : xxx"
+        android:textColor="@color/color_second_text"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>
